@@ -1,0 +1,45 @@
+﻿<Window x:Class="Игра_Жизнь.Справка"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Игра_Жизнь"
+        mc:Ignorable="d"
+        Icon="/фото/icons.png"
+        Title="Справка" Height="600" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer Padding="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/фото/icons.png" Height="50" Width="50"/>
+                    <TextBlock VerticalAlignment="Center" Text="Игровое приложение 'Жизнь'" TextAlignment="Center" FontFamily="Arial Black" Foreground="#FF401E65" FontSize="18"/>
+                </StackPanel>
+                <TextBlock Text="Разработчик: студент группы ПР-330/б Исаева В.В. &#10;Версия: 1.0. &#10;Дата написания: 07.10.2023 - 08.12.2023" 
+                           Margin="0 20 0 20" TextWrapping="Wrap" TextAlignment="Justify"/>
+                           
+                <TextBlock VerticalAlignment="Center" Text="Назначение"  FontFamily="Arial Black" Foreground="#FF401E65" FontSize="18"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Justify" 
+                           Text="Разработка игрового приложения «Жизнь» выполняется в рамках курсового проектирования по МДК 02.01 «Технология разработки программного обеспечения». 
+                           &#10;Код программы написан на языке программирования C# и декларативном языке разметки XAML.
+                           &#10;&#10;Программа предназначена для моделирования колонии Жизни. Игра «Жизнь» (англ. Game of Life) — клеточный автомат, придуманный английским математиком Джоном Конвеем в 1970 году. Это игра без игроков, в которой человек создаёт начальное состояние, а потом лишь наблюдает за её развитием. История колонии Жизнь зачаровывает, если её просматривать как фильм."/>
+
+                <TextBlock VerticalAlignment="Center" Text="Правила игры"  FontFamily="Arial Black" Foreground="#FF401E65" FontSize="18"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Justify" Text="– «Жизнь» разыгрывается на клеточном поле.
+                           &#10;– Клетки задаются автоматически рандомным образом, по желанию игрок также может сам расставлять клетки.
+                           &#10;– У каждой клетки 8 соседних клеток.
+                           &#10;– В каждой клетке может жить существо.
+                           &#10;– Существо с двумя или тремя соседями выживает в следующем поколении, иначе погибает от одиночества или перенаселённости.
+                           &#10;– В пустой клетке с тремя соседями в следующем поколении рождается существо."/>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

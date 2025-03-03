@@ -1,0 +1,55 @@
+﻿<Window x:Class="Игра_Жизнь.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Игра_Жизнь"
+        mc:Ignorable="d"
+        Icon="/фото/icons.png"
+        Title="Добро пожаловать" Width="900" Height="600"
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/фото/фон.jpg" />
+    </Window.Background>
+    <Window.Resources>
+       <!-- <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Arial Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Style.Resources>
+        </Style>-->
+
+        <ResourceDictionary>
+            <RoutedUICommand x:Key="f1" Text="Anouther Text"/>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Window.InputBindings>
+        <KeyBinding Key="F1" Command="{StaticResource f1}"/>
+    </Window.InputBindings>
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource f1}" Executed="F1Shortcut1"/>
+    </Window.CommandBindings>
+
+    <Grid>
+        <Button Content="?" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="5" Click="Spravka_Click" Background="{x:Null}" />
+        <Button Content="Статистика игры" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 5 10 0" FontSize="16" Click="Statistics_Click" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" />
+
+        <Image Source="/фото/text.png" />
+
+        <StackPanel VerticalAlignment="Bottom" Background="#80000000" Opacity="0.8" >
+            <TextBlock Text="Присоединяйтесь к захватывающей игре 'Жизнь' Джона Конвея и управляйте собственной эволюцией!" 
+                       FontSize="16" Foreground="White" TextAlignment="Center" />
+            <Button x:Name="Registration" Content="Играть сейчас" Width="250" Height="40" Margin="0 10" FontSize="18" Background="#FFFFF400" FontWeight="Bold" Foreground="#FF3D1961" Click="Registration_Click">
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect Color="#FF4C4545" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.6" />
+                </Button.BitmapEffect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

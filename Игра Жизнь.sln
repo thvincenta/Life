@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Игра Жизнь", "Игра Жизнь.csproj", "{79BCBD72-EBDD-47A3-93C5-BE7AF149A7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestGameOfLife", "..\UnitTestGameOfLife\UnitTestGameOfLife.csproj", "{764EA57B-67B8-48B9-8DD7-2B5BFFA55475}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79BCBD72-EBDD-47A3-93C5-BE7AF149A7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BCBD72-EBDD-47A3-93C5-BE7AF149A7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BCBD72-EBDD-47A3-93C5-BE7AF149A7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BCBD72-EBDD-47A3-93C5-BE7AF149A7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764EA57B-67B8-48B9-8DD7-2B5BFFA55475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764EA57B-67B8-48B9-8DD7-2B5BFFA55475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764EA57B-67B8-48B9-8DD7-2B5BFFA55475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764EA57B-67B8-48B9-8DD7-2B5BFFA55475}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E4BE6C3-EF2E-45C4-A8EE-330E10A306F8}
+	EndGlobalSection
+EndGlobal
